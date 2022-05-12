@@ -404,6 +404,8 @@ To https://codeup.aliyun.com/5f73e5a3728df4b180fab5ca/myblog-2022-05-12.git
 
 ![image-20220512231145367](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231146.png)
 
+![image-20220513000838863](http://myapp.image.qiniu.mykernel.cn/2022/05/13/20220513000840.png)
+
 ![image-20220512231253578](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231255.png)
 
 ![image-20220512231626849](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231628.png)
@@ -569,8 +571,7 @@ categories:
 Fluid主题 https://blog.csdn.net/yaorongke/article/details/119089190
 
 ```
-$ git clone --recurse-submodules git@github.com:fluid-dev/hexo-theme-fluid.git themes/fluid
-$ git submodule add git@github.com:fluid-dev/hexo-theme-fluid.git themes/fluid
+$ git submodule add https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid
 ```
 
 编辑 `_config.yml`
@@ -610,4 +611,30 @@ cp themes/fluid/_config.yml _config.fluid.yml
 重启 `npx hexo server`
 
 ![image-20220512235645718](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512235647.png)
+
+
+
+## 发布
+
+准备脚本 `push.sh`
+
+```
+#!/bin/bash
+git config --local pull.rebase true
+git add .
+git commit -m "笔记本-`date +%F_%T`"
+
+
+git push origin main
+
+git pull origin main
+[ $? -ne 0 ] && exit -1
+
+git push origin main
+
+# test
+start $(readlink -f .)/source/_posts
+```
+
+https://slcnx.github.io/
 
