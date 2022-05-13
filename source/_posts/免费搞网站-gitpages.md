@@ -507,6 +507,10 @@ post_asset_folder: true
 npm install hexo-typora-asset --registry https://registry.npmjs.org --save
 ```
 
+typora中的配置
+
+![image-20220513092438970](免费搞网站-gitpages/image-20220513092438970.png)
+
 重启 `npx hexo server`
 
 ![image-20220512233117729](免费搞网站-gitpages/20220512233119.png)
