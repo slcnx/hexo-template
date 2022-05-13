@@ -43,9 +43,9 @@ slcnx.github.io 仓库名
 </html>
 ```
 
-![image-20220512214700115](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512214701.png)
+![image-20220512214700115](免费搞网站-gitpages/20220512214701-16524035403072.png)
 
-![image-20220512214617755](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512214623.png)
+![image-20220512214617755](免费搞网站-gitpages/20220512214623.png)
 
 # docker推送github
 
@@ -55,7 +55,7 @@ id_rsa_2048 **需要linux生成或xshell生成，不可以自己生成**
 
 id_rsa_2048的公钥加入到以上仓库中
 
-![image-20220512225647448](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512225649.png)
+![image-20220512225647448](免费搞网站-gitpages/20220512225649.png)
 
 Dockerfile
 
@@ -111,7 +111,7 @@ index.html
 D:\vscode_projects\myblog>docker build -t test .
 ```
 
-![image-20220512223351323](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512223352.png)
+![image-20220512223351323](免费搞网站-gitpages/20220512223352.png)
 
 # 本地生成hexo仓库
 
@@ -136,7 +136,7 @@ _config.yml            package.json   scaffolds/         themes/
 hexo server
 ```
 
-![image-20220512224451207](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512224452.png)
+![image-20220512224451207](免费搞网站-gitpages/20220512224452.png)
 
 
 
@@ -188,7 +188,7 @@ hexo server
    docker build --build-arg GITHUB=git@github.com:slcnx/slcnx.github.io.git --build-arg EMAIL='2192383945@qq.com' --build-arg GUSER='songliangcheng' ./
    ```
 
-![image-20220512225141348](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512225143.png)
+![image-20220512225141348](免费搞网站-gitpages/20220512225143.png)
 
 # codeup一键发布
 
@@ -196,7 +196,7 @@ hexo server
 
 将当前仓库加入到自己的codeup中
 
-![image-20220512230441057](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512230442.png)
+![image-20220512230441057](免费搞网站-gitpages/20220512230442.png)
 
 复制https地址 https://codeup.aliyun.com/5f73e5a3728df4b180fab5ca/myblog-2022-05-12.git
 
@@ -345,6 +345,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# 静态文件
+public 
 ```
 
 ## 推送aliyun
@@ -396,41 +400,41 @@ To https://codeup.aliyun.com/5f73e5a3728df4b180fab5ca/myblog-2022-05-12.git
 
 ## aliyun验证
 
-![image-20220512231058218](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231059.png)
+![image-20220512231058218](免费搞网站-gitpages/20220512231059.png)
 
 ## 添加流水线
 
-![image-20220512231118465](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231120.png)
+![image-20220512231118465](免费搞网站-gitpages/20220512231120.png)
 
-![image-20220512231145367](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231146.png)
+![image-20220512231145367](免费搞网站-gitpages/20220512231146.png)
 
-![image-20220513000838863](http://myapp.image.qiniu.mykernel.cn/2022/05/13/20220513000840.png)
+![image-20220513000838863](免费搞网站-gitpages/20220513000840.png)
 
-![image-20220512231253578](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231255.png)
+![image-20220512231253578](免费搞网站-gitpages/20220512231255.png)
 
-![image-20220512231626849](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231628.png)
+![image-20220512231626849](免费搞网站-gitpages/20220512231628.png)
 
 删除kubernetes发布
 
 保存并运行
 
-![image-20220512231322519](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231324.png)
+![image-20220512231322519](免费搞网站-gitpages/20220512231324.png)
 
 ## 查看运行日志
 
-![image-20220512232019242](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512232021.png)
+![image-20220512232019242](免费搞网站-gitpages/20220512232021.png)
 
 ## 查看github进度
 
-![image-20220512232121239](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512232122.png)
+![image-20220512232121239](免费搞网站-gitpages/20220512232122.png)
 
 ## 查看页面
 
 当进度为
 
-![image-20220512232140087](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512232141.png)
+![image-20220512232140087](免费搞网站-gitpages/20220512232141.png)
 
-![image-20220512232150142](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512232151.png)
+![image-20220512232150142](免费搞网站-gitpages/20220512232151.png)
 
 # 开发方式
 
@@ -440,7 +444,7 @@ To https://codeup.aliyun.com/5f73e5a3728df4b180fab5ca/myblog-2022-05-12.git
 
 安装插件 typora  **安装后需要重启vscode**
 
-![image-20220512231735959](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512231737.png)
+![image-20220512231735959](免费搞网站-gitpages/20220512231737.png)
 
 ## 本地开发
 
@@ -491,13 +495,21 @@ https://blog.csdn.net/yaorongke/article/details/119089190
 
 例如修改标题 `_config.yml`
 
-```
+```yaml
 title: "5-12 23:30"
+# ...
+
+post_asset_folder: true
+```
+
+```bash
+# 处理typora相对路径
+npm install hexo-typora-asset --registry https://registry.npmjs.org --save
 ```
 
 重启 `npx hexo server`
 
-![image-20220512233117729](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512233119.png)
+![image-20220512233117729](免费搞网站-gitpages/20220512233119.png)
 
 
 
@@ -539,7 +551,7 @@ categories:
 <!--more-->
 ```
 
-![image-20220512234114962](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512234116.png)
+![image-20220512234114962](免费搞网站-gitpages/20220512234116.png)
 
 要实现每个文章创建均生成nginx这样的模板, 编辑 `scaffolds/post.md`
 
@@ -562,7 +574,7 @@ categories:
 
 网页已经达到效果
 
-![image-20220512234551537](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512234553.png)
+![image-20220512234551537](免费搞网站-gitpages/20220512234553.png)
 
 ## 准备一个主题 fluid
 
@@ -585,7 +597,7 @@ theme: fluid
 
 重启 `npx hexo server`
 
-![image-20220512235038001](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512235039.png)
+![image-20220512235038001](免费搞网站-gitpages/20220512235039.png)
 
 
 
@@ -610,7 +622,7 @@ cp themes/fluid/_config.yml _config.fluid.yml
 
 重启 `npx hexo server`
 
-![image-20220512235645718](http://myapp.image.qiniu.mykernel.cn/2022/05/12/20220512235647.png)
+![image-20220512235645718](免费搞网站-gitpages/20220512235647.png)
 
 
 
