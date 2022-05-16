@@ -10,6 +10,7 @@ if [ -z "$email" ]; then
       continue
     else
       git config --global user.email "$email"
+      break
     fi
   done
 fi
@@ -23,6 +24,7 @@ if [ -z "$name" ]; then
       continue
     else
       git config --global user.name "$name"
+      break
     fi
   done
 fi
