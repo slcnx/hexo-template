@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:16.19.1
 
 
 WORKDIR /data/git 
@@ -22,4 +22,6 @@ ENV GIT_SSH_COMMAND='ssh -i /root/.ssh/id_rsa_2048  -o IdentitiesOnly=yes -o Use
 RUN git config --global init.defaultBranch main && git config --global user.email $EMAIL  && git config --global user.name $GUSER  && \
     git config --global pull.rebase true && \
     git init && \
-    git remote add origin $GITHUB && git add -A && git commit -m init && git push --force origin main 
+    git remote add origin $GITHUB && git add -A && git commit -m init && \
+    git branch -M main && \
+    git push --force origin main 
